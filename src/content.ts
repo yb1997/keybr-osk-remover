@@ -58,7 +58,7 @@ css.innerHTML = `
 css.id = "osk-remover";
 
 function toggleStyles(state: OSKState) {
-    if (state === "show") {
+    if (state === "show" && document.head.contains(css)) {
         document.head.removeChild(css);
     } else if (state === "hide") {
         document.head.appendChild(css);
