@@ -1,0 +1,34 @@
+{
+  "name": "Keybr OSK Remover",
+  "description": "Chrome Extension to remove on-screen keyboard from keybr.com",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "icons": {
+    "16": "keyboard_32x16.png",
+    "48": "keyboard_32x16.png",
+    "128": "keyboard_128x64.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "keyboard_32x16.png",
+      "48": "keyboard_32x16.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.keybr.com/"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
