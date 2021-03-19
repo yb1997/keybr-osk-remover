@@ -1,5 +1,5 @@
 {
-  "name": "chrome-extension-react-typescript-boilerplate",
+  "name": "keybr-osk-remover",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "webpack --watch"
   },
   "keywords": [],
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/chrome": "0.0.125",
     "@babel/core": "^7.12.3",
